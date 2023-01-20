@@ -15,7 +15,9 @@
       <!-- Categoria Column -->
       <ng-container matColumnDef="category">
         <th mat-header-cell *matHeaderCellDef> Categoria </th>
-        <td mat-cell *matCellDef="let cc"> {{cc.category}} </td>
+        <td mat-cell *matCellDef="let cc"> {{cc.category}}
+          <mat-icon aria-hidden="false" aria-label="Categoria do Curso" fontIcon="{{ cc.category | category}}"></mat-icon>
+        </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
