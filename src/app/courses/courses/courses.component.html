@@ -6,6 +6,13 @@
       <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
 
+
+      <!-- Nome Column -->
+      <ng-container matColumnDef="_id">
+        <th mat-header-cell *matHeaderCellDef> _ID </th>
+        <td mat-cell *matCellDef="let cc"> {{cc._id}} </td>
+      </ng-container>
+
       <!-- Nome Column -->
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> Curso </th>
